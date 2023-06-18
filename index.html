@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Weather</a>
+        <button class="navbar-toggler" type="button"></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <button class="nav-link usg_guide">Usage Guide</button>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              id="city"
+              class="form-control me-2"
+              type="search"
+              placeholder="City Name"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit" id="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="usage_guide" id="usage_guide">
+      <h1>How to Use</h1>
+      <h3>
+        The Weather API provides the latest weather information for any city or
+        geographic location in the world. Get current weather data by city, ZIP
+        code, or geolocation coordinates (latitude/longitude).
+      </h3>
+      <h2>
+        Place any of the above mentioned parameteres in the search box to get
+        the weather report of that particular place,
+      </h2>
+      <h1>Thaks for visiting, Do check about your place</h1>
+    </div>
+
+    <div class="header">
+      <h1>Weather for <span id="cityName">Delhi</span></h1>
+    </div>
+    <div class="weather-box">
+      <div class="card">
+        <h2 class="card-title">Temperature</h2>
+        <div class="card-body">
+          <div class="card-text">
+            <h4>
+              Temperature : <strong><span id="temp"></span></strong
+              ><span>&#8451;</span>
+            </h4>
+            <h4>
+              Max Temperature : <strong><span id="max_temp"></span></strong>
+              <span>&#8451;</span>
+            </h4>
+            <h4>
+              Min Temperature : <strong><span id="min_temp"></span></strong>
+              <span>&#8451;</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Wind</h2>
+        <div class="card-body">
+          <div class="card-text">
+            <h4>
+              Wind Degrees : <strong><span id="wind_degrees"> </span></strong
+              ><span> &deg;</span>
+            </h4>
+            <h4>
+              Wind Speed : <strong><span id="wind_speed"></span> </strong
+              ><span>km/hr</span>
+            </h4>
+            <h4>
+              Humidity : <strong><span id="humidity"></span> </strong
+              ><span>%</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="padding-top: 1rem">
+        <h2 class="card-title" style="text-align: center">Sunrise</h2>
+        <div class="card-body">
+          <div class="card-text">
+            <h4>Sunrise timing : <span id="sunrise"> </span></h4>
+            <h4>Sunset timing : <span id="sunset"> </span></h4>
+            <h4>Feels Like : <span id="feels_like"> </span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clock">
+      <div>
+        <span id="hour">00</span>
+        <span class="text">Hours</span>
+      </div>
+
+      <div>
+        <span id="minutes">00</span>
+        <span class="text">Minutes</span>
+      </div>
+
+      <div>
+        <span id="seconds">00</span>
+        <span class="text">Seconds</span>
+      </div>
+
+      <div>
+        <span id="ampm">AM</span>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
