@@ -125,6 +125,10 @@ body {
   .clock span {
     width: 12vw;
   }
+  .usage_guide {
+    width: auto;
+    margin: 8rem 5rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -134,12 +138,15 @@ body {
   .weather-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: fit-content;
   }
   .card {
     width: auto;
     height: auto;
     text-align: center;
+  }
+  .usage_guide {
+    width: auto;
+    margin: 6rem 6rem;
   }
 }
 
@@ -156,15 +163,22 @@ body {
     width: 30rem;
     text-align: center;
   }
+  .usage_guide {
+    width: auto;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   .clock {
     justify-content: flex-start;
     width: auto;
   }
   .clock span {
     width: 25vw;
+  }
+  .usage_guide {
+    width: auto;
+    height: fit-content;
   }
 }
 
@@ -211,14 +225,17 @@ body {
   .icon {
     display: block;
   }
+  .usage_guide {
+    margin: 5rem 3rem;
+  }
 }
 
 @media (max-width: 260px) {
   .sunrise-card-text {
     width: 11rem;
   }
-  .clock div{
-    margin : 3px;
+  .clock div {
+    margin: 3px;
   }
   .clock span {
     height: 8vh;
@@ -232,5 +249,8 @@ body {
     width: 2rem;
     height: 2.5rem;
     font-size: 1rem;
+  }
+  .usage_guide {
+    margin: 3rem 1rem;
   }
 }
