@@ -10,6 +10,13 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -67,16 +74,37 @@
         <div class="card-body">
           <div class="card-text">
             <h4>
-              Temperature : <strong><span id="temp"></span></strong
-              ><span>&#8451;</span>
+              <span class="text"
+                >Temperature : <strong><span id="temp"></span></strong
+                ><span>&#8451;</span></span
+              >
+              <span class="icon"
+                ><i class="fa-solid fa-temperature-three-quarters">: </i>
+                <strong><span id="temp_i"></span></strong
+                ><span>&#8451;</span></span
+              >
             </h4>
             <h4>
-              Max Temperature : <strong><span id="max_temp"></span></strong>
-              <span>&#8451;</span>
+              <span class="text"
+                >Max Temperature : <strong><span id="max_temp"></span></strong
+                ><span>&#8451;</span></span
+              >
+              <span class="icon"
+                ><i class="fa-solid fa-temperature-high">: </i>
+                <strong><span id="max_temp_i"></span></strong
+                ><span>&#8451;</span></span
+              >
             </h4>
             <h4>
-              Min Temperature : <strong><span id="min_temp"></span></strong>
-              <span>&#8451;</span>
+              <span class="text"
+                >Min Temperature : <strong><span id="min_temp"></span></strong
+                ><span>&#8451;</span></span
+              >
+              <span class="icon"
+                ><i class="fa-solid fa-temperature-low">: </i>
+                <strong><span id="min_temp_i"></span></strong
+                ><span>&#8451;</span></span
+              >
             </h4>
           </div>
         </div>
@@ -87,26 +115,63 @@
         <div class="card-body">
           <div class="card-text">
             <h4>
-              Wind Degrees : <strong><span id="wind_degrees"> </span></strong
-              ><span> &deg;</span>
+              <span class="text"
+                >Wind Degrees : <strong><span id="wind_degrees"></span></strong
+                ><span>&deg;</span></span
+              >
+              <span class="icon"
+                ><i class="fa-solid fa-wind">: </i>
+                <strong><span id="wind_degrees_i"></span></strong
+                ><span>&deg;</span></span
+              >
             </h4>
             <h4>
-              Wind Speed : <strong><span id="wind_speed"></span> </strong
-              ><span>km/hr</span>
+              <span class="text"
+                >Wind Speed : <strong><span id="wind_speed"></span></strong
+                ><span> km/hr</span></span
+              >
+              <span class="icon"
+                ><i class="fa-solid fa-wind">: </i>
+                <strong><span id="wind_speed_i"></span></strong
+                ><span> km/hr</span></span
+              >
             </h4>
             <h4>
-              Humidity : <strong><span id="humidity"></span> </strong
-              ><span>%</span>
+              <span class="text"
+                >Humidity : <strong><span id="humidity"></span></strong
+                ><span>%</span></span
+              >
+              <span class="icon"
+                ><i class="fa-solid fa-wind">: </i>
+                <strong><span id="humidity_i"></span></strong
+                ><span>%</span></span
+              >
             </h4>
           </div>
         </div>
       </div>
-      <div class="card" style="padding-top: 1rem">
+      <div class="card sunrise-card" style="padding-top: 1rem">
         <h2 class="card-title" style="text-align: center">Sunrise</h2>
         <div class="card-body">
-          <div class="card-text">
-            <h4>Sunrise timing : <span id="sunrise"> </span></h4>
-            <h4>Sunset timing : <span id="sunset"> </span></h4>
+          <div class="card-text sunrise-card-text">
+            <h4>
+              <span class="text"
+                >Sunrise timing : <strong><span id="sunrise"></span></strong
+              ></span>
+              <span class="icon"
+                ><i class="fa-solid fa-sun icon">: </i
+                ><span id="sunrise_i"></span
+              ></span>
+            </h4>
+            <h4>
+              <span class="text"
+                >Sunset timing : <strong><span id="sunset"></span></strong
+              ></span>
+              <span class="icon"
+                ><i class="fa-regular fa-sun icon">: </i
+                ><span id="sunset_i"></span
+              ></span>
+            </h4>
             <h4>Feels Like : <span id="feels_like"> </span></h4>
           </div>
         </div>

@@ -14,16 +14,24 @@ const getWeather = (city) => {
     .then((response) => {
       console.log(response);
       temp.innerHTML = response.temp;
+      temp_i.innerHTML = response.temp;
       feels_like.innerHTML = response.feels_like;
       humidity.innerHTML = response.humidity;
+      humidity_i.innerHTML = response.humidity;
       min_temp.innerHTML = response.min_temp;
+      min_temp_i.innerHTML = response.min_temp;
       max_temp.innerHTML = response.max_temp;
+      max_temp_i.innerHTML = response.max_temp;
       wind_speed.innerHTML = response.wind_speed;
+      wind_speed_i.innerHTML = response.wind_speed;
       wind_degrees.innerHTML = response.wind_degrees;
+      wind_degrees_i.innerHTML = response.wind_degrees;
       sunrise.innerHTML = getTime(response.sunrise);
+      sunrise_i.innerHTML = getTime(response.sunrise);
       sunset.innerHTML = getTime(response.sunset);
+      sunset_i.innerHTML = getTime(response.sunset);
     })
-    .catch((err) => console.errro(err));
+    .catch((err) => console.error(err));
 };
 
 const getTime = (epoch) => {

@@ -21,7 +21,6 @@ body {
 
 .weather-box {
   width: auto;
-  height: 50vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -110,4 +109,128 @@ body {
 .show {
   visibility: visible;
   transition: 1s ease-in-out;
+}
+
+.icon {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .card {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .clock span {
+    width: 12vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .clock span {
+    width: 14vw;
+  }
+  .weather-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+  }
+  .card {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .clock span {
+    width: 20vw;
+  }
+  .weather-box {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .card {
+    width: 30rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .clock {
+    justify-content: flex-start;
+    width: auto;
+  }
+  .clock span {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .clock span {
+    height: 10vh;
+    font-size: 3rem;
+  }
+  .clock .text {
+    height: 6vh;
+    font-size: 0.8rem;
+  }
+  .clock #ampm {
+    width: 3rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .sunrise-card {
+    display: flex;
+    align-items: center;
+  }
+  .sunrise-card-text {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .clock span {
+    height: 8vh;
+    font-size: 3rem;
+  }
+  .clock .text {
+    height: 4vh;
+    font-size: 0.8rem;
+  }
+  .clock #ampm {
+    width: 2.2rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .text {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+}
+
+@media (max-width: 260px) {
+  .sunrise-card-text {
+    width: 11rem;
+  }
+  .clock div{
+    margin : 3px;
+  }
+  .clock span {
+    height: 8vh;
+    font-size: 2.5rem;
+  }
+  .clock .text {
+    height: 4vh;
+    font-size: 0.6rem;
+  }
+  .clock #ampm {
+    width: 2rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
 }
